@@ -30,6 +30,14 @@ suma(100, 200);
 
 //===Elementos de la pagina como variables===///
 var botonBuscar = document.getElementById("buscar");
+var mas=document.getElementById("mas");
+var verPosts=document.getElementById("verPosts");
+var verFotos=document.getElementById("verFotos");
+var menu=document.getElementById("menu");
+var articles=document.getElementById("articles");
+var radio=document.getElementById("radio");
+var podcast=document.getElementById("podcast");
+var registro=document.getElementById("registro");
 
 console.log(botonBuscar);
 
@@ -39,3 +47,46 @@ botonBuscar.addEventListener("click", function(){
     botonBuscar.classList.add("rojo");
 });
 
+verPosts.addEventListener("click",function(){
+    if(post.classList.contains("ocultar")){
+        post.classList.remove("ocultar");
+        post.classList.add("mostrar");
+    }else{
+        post.classList.remove("mostrar");
+        post.classList.add("ocultar");
+    }
+});
+
+verFotos.addEventListener("click",function(){
+    if(imagen.classList.contains("ocultar")){
+        imagen.classList.remove("ocultar");
+        imagen.classList.add("mostrar");
+    }else{
+        imagen.classList.remove("mostrar");
+        imagen.classList.add("ocultar");
+    }
+});
+
+mas.addEventListener("click",function(){
+    alert("Seccion en progreso...")
+});
+
+menu.addEventListener("click",function(){
+    alert("Seccion en progreso...")
+});
+
+articles.addEventListener("click",function(){
+    alert("Seccion en progreso...")
+});
+
+radio.addEventListener("click",function(){
+    alert("Seccion en progreso...")
+});
+
+podcast.addEventListener("click",function(){
+    alert("Seccion en progreso...")
+}); 
+
+registro.addEventListener("click",function(){
+    alert("Seccion en progreso...")
+});
