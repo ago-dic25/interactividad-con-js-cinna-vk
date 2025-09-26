@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="estilos.css">
-    <!--<script src="https://kit.fontawesome.com/6d11003e79.js" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/ffe3585fa9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -20,20 +20,23 @@
             <button id="menu">Menu</button>
             <ul>
                 <li>
-                    <a href="#">Articles</a>
+                    <a id="articles" href="#">Articles</a>
                 </li>
                 <li>
-                    <a href="#">Radio</a>
+                    <a id="radio" href="#">Radio</a>
                 </li>
                 <li>
-                    <a href="#">Podcast</a>
+                    <a id="podcast" href="#">Podcast</a>
                 </li>
                  <li>
-                    <a href="#">Crear Cuenta / Registro</a>
+                    <a id="registro" href="#">Crear Cuenta / Registro</a>
                 </li>
             </ul>
             <button id="buscar">
                 Buscar
+            </button>
+            <button id="screenMode" class="screenMode dia">
+                <i class="fa-solid fa-circle-half-stroke"  style="color: #000000;"> </i>
             </button>
         </nav>
     </header>
@@ -42,8 +45,16 @@
         <section>
             <div class="tarjeta" id="bestOfTheWeek">
                 <h1>Best of the week</h1>
-                <a href="#">See all posts</a>
+                <a id="verPosts" href="#">See all posts</a>
             </div>
+
+            <div class="post ocultar" id="post">
+                <div class="post">Experiencia como Podcaster</div>
+                <div class="post">Como empezar</div>
+                <div class="post">Como hacerme viral en TikTok</div>
+                <div class="post">Como crear reels para redes</div>
+            </div>
+
             <div class="tarjeta" id="travel">
                 <span>Sep 06, 2022</span>
                 <button>Travel</button>
@@ -57,13 +68,30 @@
         <aside>
             <div class="tarjeta" id="ads">
                 <span>ADS</span>
-                <button>+</button>
+                <button id="mas">+</button>
                 <span>Become a podcaster</span>
                 <h3>Real talk</h3>
             </div>
             <div  class="tarjeta" id="seeAll">
                 <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
-                <button>See all pics</button>
+                <button id="verFotos">See all pics</button>
+                <div class="imagen ocultar" id="imagen">
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                    <div class="imagen">
+                        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="" width="50%">
+                    </div>
+                </div>
             </div>
         </aside>
     </main>

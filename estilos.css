@@ -8,7 +8,7 @@ ul {
 }
 
 nav{
-     background-color: white;  
+     background-color: white;
      border-radius:20px;
 }
 
@@ -29,6 +29,15 @@ button {
      border: none;
      background-color: transparent;
      padding: 20px;
+}
+
+.screenMode {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    margin-left: auto;
+    cursor: pointer;
 }
 
 #ads,#seeAll, #bestOfTheWeek, #travel{
@@ -77,8 +86,6 @@ section img, aside img {
      
 }
 
-
-
 #travel .info h2,
 #travel .info span {
      font-size: 20px;
@@ -117,6 +124,23 @@ section img, aside img {
 #ads * {
      display: block;
 }
+
+.ocultar {
+     display: none;
+}
+
+.mostrar{
+     display:block;
+}
+
+.post{
+     padding:20px;
+     border: solid 1px lightblue;
+     margin:10px 0;
+     background-origin: 5px 5px 5px rgba(0,0,0,0);
+     border-radius:20px;
+}
+
 /*Breakpoints*/
 @media screen and (min-width: 769px){
      main {

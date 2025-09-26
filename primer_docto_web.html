@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer docto web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="firstcss.css">
+    <script src="https://kit.fontawesome.com/ffe3585fa9.js" crossorigin="anonymous"></script>
+</head>
+<body class="dia">
+    <nav>
+        <img id="logo" class="logo dia" src="imgs/blogspot_logo.PNG" width="200">
+        <a id="articles" class="dia" href="#">Articles</a>
+        <a id="radio" class="dia" href="#">Radio</a>
+        <a id="podcast" class="dia" href="#">Podcast</a>
+        <a id="beAWriter" class="dia" href="#">Be a writer</a>
+        <a id="talkToUs" class="dia" href="#" class="underline">Talk to us</a>
+        <div style="margin-left: auto; display: flex; align-items: center; gap: 10px;">
+        <input id="busqueda" class="search-bar dia ocultar" type="text" placeholder="Search...">
+        <button id="buscar" class="search-button noche">
+            <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
+        </button>
+        </div>
+        <button id="screenMode" class="screenMode dia">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <button id="menu" class="menu-button dia">Menu</button>
+    </nav>
+    <div id="title" class="title dia">
+        <h1>Best of the week</h1>
+        <a id="verPosts" class="dia" href="#">See all posts →</a>
+    </div>
+
+    <div class="ocultar dia" id="post">
+        <div class="tarjeta post">Experiencia como Podcaster</div>
+        <div class="tarjeta post">Como empezar</div>
+        <div class="tarjeta post">Como hacerme viral en TikTok</div>
+        <div class="tarjeta post">Como crear reels para redes</div>
+    </div>
+
+    <div style="display: flex; padding: 20px;">
+    <div id="tarjeta0" class="tarjeta mostrar img-container">
+        <img src="imgs/default_1.jpg" width="800" style="border-radius: 10px;"/>
+        <div class="content-1">
+            <h3 id="date" class="date dia">Sep 06, 2022</h3>
+            <button id="travel1" class="travel-button dia">● Travel</button>
+        </div>
+        <div id="travel2" class="content-2 dia">
+            <h5>● Travel</h5>
+            <h2>Get to your dream now destinations with TravelPro</h2>
+            </div>
+        <button id="arrowButton" class="arrow-button dia">
+            <i class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+        </button>
+    </div>
+    <div style="display: block;">
+    <div id="tarjeta1" class="tarjeta mostrar ads dia">
+        <button id="ads" class="ads-button dia">● ADS</button>
+        <button id="mas" class="plus-button dia">+</button>
+        <div class="ads-text">
+            <span>Become A BROADCASTMEMBER</span>
+            <h3>Real talk in a corporate word</h3>
+            <a id="learnMore" href="#" class="underline dia" style="margin-left: 200px; font-size: 0.6em;">
+                Learn more
+            </a>
+        </div>
+    </div>
+    <div id="tarjeta2" class="tarjeta mostrar ads">
+        <img id="fotoActual" src="imgs/default_2.jpg" width="300" height="300" style="border-radius: 20px;"/>
+        <button class="button-24" style="position: absolute;"><i>24</i></button>
+        <button id="verFotos" class="ver-fotos-button">See all picks→</button>
+        <div class="imagen ocultar" id="imagen">
+        <div class="imagen">
+            <img src="imgs/default_2.jpg" alt="" width="50%">
+        </div>
+        <div class="imagen">
+            <img src="imgs/default_2.jpg" alt="" width="50%">
+        </div>
+        <div class="imagen">
+            <img src="imgs/default_2.jpg" alt="" width="50%">
+        </div>
+        <div class="imagen">
+            <img src="imgs/default_2.jpg" alt="" width="50%">
+        </div>
+        <div class="imagen">
+            <img src="imgs/default_2.jpg" alt="" width="50%">
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
