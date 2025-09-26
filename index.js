@@ -96,8 +96,8 @@ verPosts.addEventListener("click",function(){
 });*/
 
 function changeImage(){
-    fotoActual.src = fotos[++i];
-    if(i == fotos.length - 1){
+    fotoActual.src = fotos[i++];
+    if(i == fotos.length){
         i = 0;
     }
 }
